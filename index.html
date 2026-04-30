@@ -1,25 +1,93 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>SAJIB | Developer Portfolio</title> <!-- Google Fonts --> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet"> <!-- FontAwesome Icons --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Custom CSS --> <link rel="stylesheet" href="styles.css"> <!-- Custom JavaScript --> <script src="scripts.js" defer></script> </head> <body> <header> <nav> <ul> <li><a href="#home">Home</a></li> <li><a href="#about">About</a></li> <li><a href="#skills">Skills</a></li> <li><a href="#projects">Projects</a></li> <li><a href="#contact">Contact</a></li> <li><a href="SAJIBResume.pdf" target="_blank" class="btn">View My CV</a></li> </ul> </nav> <div class="hero"> <h1>Welcome to My Developer Portfolio </h1> <p>Exploring the intersection of code and creativity.</p> <div class="scroll-down"> <a href="#about"><i class="fas fa-chevron-down"></i></a> </div> </div> </header>
-<section id="about">
-<div class="about-container">
-<div class="left">
-<img src="sajib.png" alt="SAJIB">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAJIB | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+
+<div class="hero-left">
+<img src="sajib.png" alt="Sajib">
 </div>
 
-<div class="right">
-<h2>> SAJIB.exe</h2>
-<p>
-I am SAJIB, a CSE student and developer.
-Skilled in Android, Web, and Programming (C, C++, Java).
-</p>
+<div class="hero-right">
+<h1>Hi, I'm SAJIB</h1>
+<p>Android & Web Developer</p>
 
-<button onclick="scrollToProjects()">> View Projects</button>
+<div class="buttons">
+<a href="#projects" class="btn">View Projects</a>
+<a href="SAJIBResume.pdf" target="_blank" class="btn-outline">Download CV</a>
 </div>
+</div>
+
 </div>
 </section>
- <section id="skills"> <h2>Skills</h2> <div class="skills-container"> <div class="skill"> <i class="fab fa-android"></i> <h3>Android Development</h3> <p>Java, XML, Firebase</p> </div> <div class="skill"> <i class="fab fa-html5"></i> <h3>Web Development</h3> <p>HTML, CSS, JavaScript</p> </div> <div class="skill"> <i class="fas fa-code"></i> <h3>Programming Languages</h3> <p>C, C++, Java</p> </div> </div> </section> 
 
-<section id="projects"> <h2>Projects</h2> <div class="project-container"> <div class="project-card"> <h3>CGPA Grade Calculator</h3> <p>This desktop application calculates the CGPA Grade of semesters based on the grades that a student achieves.</p> <a href="https://github.com/MD-SAJIB-AHAMED/CGPA-Grade-Calculate" target="_blank"><i class="fas fa-external-link-alt"></i> GitHub Link</a> </div> <div class="project-card"> <h3>BMI Calculator (Android)</h3> <p>It is an Android application that allows users to calculate their BMI from their height (kg) and weight (feet & inch).</p> <a href="https://github.com/MD-SAJIB-AHAMED/BMICALCULATOR" target="_blank"><i class="fas fa-external-link-alt"></i> GitHub Link</a> </div> <div class="project-card"> <h3>Digital Tajbih (Android)</h3> <p>A digital Tasbih is a virtual version of the traditional Islamic prayer beads used by Muslims to count the repetition of certain phrases or dhikr (remembrance of Allah).</p> <a href="https://github.com/MD-SAJIB-AHAMED/DigitalTajbih" target="_blank"><i class="fas fa-external-link-alt"></i> GitHub Link</a> </div> <div class="project-card"> <h3>Zakat Calculation (Android)</h3> <p>This Android application helps users calculate their Zakat, an obligatory form of almsgiving in Islam.</p> <a href="https://github.com/MD-SAJIB-AHAMED/ZakatCalculation" target="_blank"><i class="fas fa-external-link-alt"></i> GitHub Link</a> </div> <div class="project-card"> <h3>LanCon (Android)</h3> <p>A robust Android application designed to facilitate offline communication between devices connected to the same local Wi-Fi network.</p> <a href="https://github.com/MD-SAJIB-AHAMED/LanCon-Application" target="_blank"><i class="fas fa-external-link-alt"></i> GitHub Link</a> </div> </div> </section>
+<!-- PROJECTS -->
+<section id="projects">
+<h2>My Projects</h2>
 
-<div id="project-details"></div>
+<div class="project-grid">
 
- <section id="contact"> <h2>Contact</h2> <ul> <li><a href="https://www.facebook.com/MDSAJIB.CSE" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li> <li><a href="https://www.linkedin.com/in/md-sajib-2833a22a0" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li> <li><a href="https://github.com/MD-SAJIB-AHAMED" target="_blank"><i class="fab fa-github"></i> GitHub</a></li> <li><a href="mailto:sksojib5688@gmail.com"><i class="fas fa-envelope"></i> Email: sksojib5688@gmail.com</a></li> </ul> <div class="contact-actions"> <a href="https://m.me/MDSAJIB.CSE" target="_blank" class="message-me-btn"><i class="fab fa-facebook-messenger"></i> Message Me on Messenger</a> </div> </section> <div id="chat-button"> <img src="chat-icon.png" alt="Chat" title="Chat with me!"> </div> <footer> <p>&copy; 2024 SAJIB's Portfolio. All Rights Reserved.</p> </footer> </body> </html>
+<div class="project-card"
+data-title="CGPA Calculator"
+data-desc="Desktop app for calculating CGPA easily."
+data-link="https://github.com/MD-SAJIB-AHAMED/CGPA-Grade-Calculate">
+<h3>CGPA Calculator</h3>
+</div>
+
+<div class="project-card"
+data-title="BMI Calculator"
+data-desc="Android app to calculate BMI from height & weight."
+data-link="https://github.com/MD-SAJIB-AHAMED/BMICALCULATOR">
+<h3>BMI Calculator</h3>
+</div>
+
+<div class="project-card"
+data-title="Digital Tasbih"
+data-desc="Islamic Tasbih counter Android application."
+data-link="https://github.com/MD-SAJIB-AHAMED/DigitalTajbih">
+<h3>Digital Tasbih</h3>
+</div>
+
+<div class="project-card"
+data-title="Zakat Calculator"
+data-desc="Android app for calculating Zakat easily."
+data-link="https://github.com/MD-SAJIB-AHAMED/ZakatCalculation">
+<h3>Zakat Calculator</h3>
+</div>
+
+<div class="project-card"
+data-title="LanCon App"
+data-desc="Offline LAN chat application."
+data-link="https://github.com/MD-SAJIB-AHAMED/LanCon-Application">
+<h3>LanCon App</h3>
+</div>
+
+</div>
+</section>
+
+<!-- MODAL -->
+<div id="modal">
+<div class="modal-content">
+<span id="close">×</span>
+<h2 id="modal-title"></h2>
+<p id="modal-desc"></p>
+<a id="modal-link" target="_blank">Open Project</a>
+</div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
